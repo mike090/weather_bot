@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=open_weather_api_key&lang=ru&q=Kazan&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenWeather Ruby Client/0.5.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 13 Oct 2024 10:38:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '510'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lang=ru&q=kazan&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb29yZCI6eyJsb24iOjQ5LjEyMjEsImxhdCI6NTUuNzg4N30sIndlYXRoZXIiOlt7ImlkIjo4MDAsIm1haW4iOiJDbGVhciIsImRlc2NyaXB0aW9uIjoi0Y/RgdC90L4iLCJpY29uIjoiMDFkIn1dLCJiYXNlIjoic3RhdGlvbnMiLCJtYWluIjp7InRlbXAiOjYuMzQsImZlZWxzX2xpa2UiOjMuNDMsInRlbXBfbWluIjo2LjM0LCJ0ZW1wX21heCI6Ni4zNCwicHJlc3N1cmUiOjEwMzcsImh1bWlkaXR5IjoyOCwic2VhX2xldmVsIjoxMDM3LCJncm5kX2xldmVsIjoxMDIzfSwidmlzaWJpbGl0eSI6MTAwMDAsIndpbmQiOnsic3BlZWQiOjQuMTUsImRlZyI6MTU5LCJndXN0Ijo1LjN9LCJjbG91ZHMiOnsiYWxsIjowfSwiZHQiOjE3Mjg4MTU5MjksInN5cyI6eyJ0eXBlIjoxLCJpZCI6OTAzOCwiY291bnRyeSI6IlJVIiwic3VucmlzZSI6MTcyODc4OTAyNywic3Vuc2V0IjoxNzI4ODI3MzE4fSwidGltZXpvbmUiOjEwODAwLCJpZCI6NTUxNDg3LCJuYW1lIjoi0JrQsNC30LDQvdGMIiwiY29kIjoyMDB9
+  recorded_at: Sun, 13 Oct 2024 10:38:49 GMT
+recorded_with: VCR 6.3.1

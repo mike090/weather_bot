@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.telegram.org/bottelegram_bot_token/getUpdates
+    body:
+      encoding: UTF-8
+      string: offset=0&timeout=20
+    headers:
+      User-Agent:
+      - Faraday v2.12.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0
+      Date:
+      - Sun, 13 Oct 2024 18:49:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '406'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Expose-Headers:
+      - Content-Length,Content-Type,Date,Server,Connection
+    body:
+      encoding: UTF-8
+      string: |-
+        {"ok":true,"result":[{"update_id":734243202,
+        "message":{"message_id":34,"from":{"id":423203090,"is_bot":false,"first_name":"Mikhail","last_name":"Bogachev","username":"m_boga4ev","language_code":"ru"},"chat":{"id":423203090,"first_name":"Mikhail","last_name":"Bogachev","username":"m_boga4ev","type":"private"},"date":1728844902,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}
+  recorded_at: Sun, 13 Oct 2024 18:49:54 GMT
+recorded_with: VCR 6.3.1
